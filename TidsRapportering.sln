@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TidsRapportering", "TidsRapportering\TidsRapportering.csproj", "{04978C94-4164-4144-8122-4D4BA82D7DD1}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TidsRapporteringAngular", "..\..\WebSites\TidsRapporteringAngular\", "{19C9C19A-046F-4E97-A0E1-D7C9052F6715}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_7233"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\TidsRapporteringAngular\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_7233\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_7233"
+		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\TidsRapporteringAngular\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_7233\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "7233"
+		SlnRelativePath = "..\..\WebSites\TidsRapporteringAngular\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04978C94-4164-4144-8122-4D4BA82D7DD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04978C94-4164-4144-8122-4D4BA82D7DD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04978C94-4164-4144-8122-4D4BA82D7DD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04978C94-4164-4144-8122-4D4BA82D7DD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19C9C19A-046F-4E97-A0E1-D7C9052F6715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19C9C19A-046F-4E97-A0E1-D7C9052F6715}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19C9C19A-046F-4E97-A0E1-D7C9052F6715}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{19C9C19A-046F-4E97-A0E1-D7C9052F6715}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
