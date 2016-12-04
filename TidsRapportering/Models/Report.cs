@@ -15,6 +15,8 @@ namespace TidsRapportering.Models
     public partial class Report
     {
         public int Id { get; set; }
+        public string Name { get; set; }
+        public int Time { get; set; }
         public System.DateTime Date { get; set; }
     }
 }

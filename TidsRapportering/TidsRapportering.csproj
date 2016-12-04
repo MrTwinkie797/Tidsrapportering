@@ -81,11 +81,19 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.3\lib\net45\System.Web.Http.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
@@ -244,23 +252,23 @@
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\Report.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Report.Context.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\Report.cs">
-      <DependentUpon>Report.tt</DependentUpon>
+      <DependentUpon>ReportModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Report.Designer.cs">
+    <Compile Include="Models\ReportModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Report.edmx</DependentUpon>
+      <DependentUpon>ReportModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Report1.cs">
+    <Compile Include="Models\ReportModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Report.tt</DependentUpon>
+      <DependentUpon>ReportModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ReportModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
@@ -278,15 +286,15 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Models\Report.Context.tt">
+    <Content Include="Models\ReportModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Report.edmx</DependentUpon>
-      <LastGenOutput>Report.Context.cs</LastGenOutput>
+      <DependentUpon>ReportModel.edmx</DependentUpon>
+      <LastGenOutput>ReportModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\Report.tt">
+    <Content Include="Models\ReportModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Report.edmx</DependentUpon>
-      <LastGenOutput>Report1.cs</LastGenOutput>
+      <DependentUpon>ReportModel.edmx</DependentUpon>
+      <LastGenOutput>ReportModel.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -312,12 +320,12 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <EntityDeploy Include="Models\Report.edmx">
+    <EntityDeploy Include="Models\ReportModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Report.Designer.cs</LastGenOutput>
+      <LastGenOutput>ReportModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\Report.edmx.diagram">
-      <DependentUpon>Report.edmx</DependentUpon>
+    <Content Include="Models\ReportModel.edmx.diagram">
+      <DependentUpon>ReportModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -357,6 +365,7 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

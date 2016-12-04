@@ -10,6 +10,8 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Time" Type="int" Nullable="false" />
           <Property Name="Date" Type="date" Nullable="false" />
         </EntityType>
         <EntityContainer Name="ReportTimeModelStoreContainer">
@@ -25,9 +27,11 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Time" Type="Int32" Nullable="false" />
           <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
         </EntityType>
-        <EntityContainer Name="ReportTimeEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="ReportTimeEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Report" EntityType="Self.Report" />
         </EntityContainer>
       </Schema>
@@ -35,11 +39,13 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="ReportTimeModelStoreContainer" CdmEntityContainer="ReportTimeEntities">
+        <EntityContainerMapping StorageEntityContainer="ReportTimeModelStoreContainer" CdmEntityContainer="ReportTimeEntities1">
           <EntitySetMapping Name="Report">
             <EntityTypeMapping TypeName="ReportTimeModel.Report">
               <MappingFragment StoreEntitySet="Report">
                 <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Time" ColumnName="Time" />
                 <ScalarProperty Name="Date" ColumnName="Date" />
               </MappingFragment>
             </EntityTypeMapping>

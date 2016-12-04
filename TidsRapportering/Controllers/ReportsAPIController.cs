@@ -15,15 +15,15 @@ namespace TidsRapportering.Controllers
 {
     public class ReportsAPIController : ApiController
     {
-        private ReportTimeEntities db = new ReportTimeEntities();
+        private ReportTimeEntities1 db = new ReportTimeEntities1();
 
-        // GET: api/ReportsAPI
+        // GET: api/Reports
         public IQueryable<Report> GetReport()
         {
             return db.Report;
         }
 
-        // GET: api/ReportsAPI/5
+        // GET: api/Reports/5
         [ResponseType(typeof(Report))]
         public async Task<IHttpActionResult> GetReport(int id)
         {
@@ -36,7 +36,7 @@ namespace TidsRapportering.Controllers
             return Ok(report);
         }
 
-        // PUT: api/ReportsAPI/5
+        // PUT: api/Reports/5
         [ResponseType(typeof(void))]
         public async Task<IHttpActionResult> PutReport(int id, Report report)
         {
@@ -71,9 +71,10 @@ namespace TidsRapportering.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
-        // POST: api/ReportsAPI
+        // POST: api/Reports
+        [HttpPost]
         [ResponseType(typeof(Report))]
-        public async Task<IHttpActionResult> PostReport(Report report)
+        public async Task<IHttpActionResult> AddReport(Report report)
         {
             if (!ModelState.IsValid)
             {
@@ -101,7 +102,7 @@ namespace TidsRapportering.Controllers
             return CreatedAtRoute("DefaultApi", new { id = report.Id }, report);
         }
 
-        // DELETE: api/ReportsAPI/5
+        // DELETE: api/Reports/5
         [ResponseType(typeof(Report))]
         public async Task<IHttpActionResult> DeleteReport(int id)
         {

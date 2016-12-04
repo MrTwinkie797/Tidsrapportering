@@ -13,10 +13,10 @@ namespace TidsRapportering.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ReportTimeEntities : DbContext
+    public partial class ReportTimeEntities1 : DbContext
     {
-        public ReportTimeEntities()
-            : base("name=ReportTimeEntities")
+        public ReportTimeEntities1()
+            : base("name=ReportTimeEntities1")
         {
         }
     

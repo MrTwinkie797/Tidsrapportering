@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="c836020b48554315b4c643f09794cbdb" Name="Diagram1">
+      <Diagram DiagramId="28646afc1f714ef4adb00775d93853b8" Name="Diagram1">
         <EntityTypeShape EntityType="ReportTimeModel.Report" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
