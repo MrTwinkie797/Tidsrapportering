@@ -85,7 +85,6 @@ c:\users\adrian\documents\visual studio 2015\Projects\TidsRapportering\TidsRappo
 c:\users\adrian\documents\visual studio 2015\Projects\TidsRapportering\TidsRapportering\bin\Microsoft.Owin.Security.Twitter.xml
 c:\users\adrian\documents\visual studio 2015\Projects\TidsRapportering\TidsRapportering\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 c:\users\adrian\documents\visual studio 2015\Projects\TidsRapportering\TidsRapportering\bin\System.Web.Http.Owin.xml
-c:\users\adrian\documents\visual studio 2015\Projects\TidsRapportering\TidsRapportering\obj\Debug\TidsRapportering.csprojResolveAssemblyReference.cache
 c:\users\adrian\documents\visual studio 2015\Projects\TidsRapportering\TidsRapportering\obj\Debug\TidsRapportering.dll
 c:\users\adrian\documents\visual studio 2015\Projects\TidsRapportering\TidsRapportering\obj\Debug\TidsRapportering.pdb
 c:\users\adrian\documents\visual studio 2015\Projects\TidsRapportering\TidsRapportering\bin\System.Web.Cors.dll
